@@ -6,8 +6,9 @@ import datetime
 app = Flask(__name__)
 
 # Load the model with corrected file path
-with open(r'C:\Users\nujud\Desktop\Flask_APP\weather_model.pkl', 'rb') as file:
+with open('weather_model.pkl', 'rb') as file:
     model = pickle.load(file)
+
 
 def preprocess_input(date_str):
     # Replace with the same preprocessing you did in your notebook
